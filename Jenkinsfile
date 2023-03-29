@@ -1,9 +1,14 @@
 pipeline {
 
 		agent {
+			label {
+			 
+				label "built-in"
+				customWorkspace ("/mnt/multibranch")
+			      }
 		
-			label "built-in"
-		}
+			
+		     }
 
 		stages {
 		
@@ -11,7 +16,7 @@ pipeline {
 			
 					steps {
 					
-						echo "hello all this is master branch"
+						sh "mkdir just"
 					
 					
 					}
