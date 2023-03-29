@@ -4,7 +4,7 @@ pipeline {
 			label {
 			 
 				label "built-in"
-				customWorkspace ("/mnt/multibranch")
+				customWorkspace ("/mnt/multibranch/new")
 			      }
 		
 			
